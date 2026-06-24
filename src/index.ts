@@ -19,7 +19,7 @@ import adminRoutes from "./routes/adminRoutes";
 import multipart from "@fastify/multipart";
 
 
-const PORT = parseInt(process.env.PORT || '80', 10);
+const PORT = parseInt(process.env.PORT || '3000', 10);
 const app = fastify({ logger: true });
 
 
