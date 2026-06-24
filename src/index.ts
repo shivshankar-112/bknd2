@@ -90,7 +90,7 @@ const start = async () => {
     try {
         await connectDb();
 
-        await app.listen({ port: PORT });
+        await app.listen({ port: PORT, host:'0.0.0.0' });
 
         // Fastify's underlying HTTP server
         initSocket(app.server);
